@@ -27,7 +27,7 @@
 #use export kubeconfig
 #kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 #kubeadm token create --print-join-command
-#workernode 
+#master nodes 
 #sudo su 
 #kubeadm reset pre-flight checks
 #kubectl get notes
