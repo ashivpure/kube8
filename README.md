@@ -30,10 +30,20 @@
 #master nodes 
 #sudo su 
 #kubeadm reset pre-flight checks
-#kubectl get notes
+#kubectl get nodes
 #kubectl run nginx --image=nginx --restart=Never
 #kubectl get pod
 #kubectl delete -f file-name
+
+error kubectl get nodes :-The connection to the server localhost:8080 was refused - did you specify the right host or port?
+#mkdir .kube
+# ll
+# cat admin.conf
+# sudo kubectl get nodes
+# sudo cp admin.conf config
+# mv config .kube/
+# sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
 #kubectl get namespaces
 #kubectl get pods -ns=kube-system
 #kubectl get ns
