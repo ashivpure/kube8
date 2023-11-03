@@ -23,7 +23,10 @@
 #or
 #sudo apt-get install -y kubelet kubeadm kubectl
 #sudo su
-#kubeadm init
+#sudo systemctl stop kubelet.service
+#kubeadm reset
+#kubeadm init  'if this commont is not working then try this"
+#kubeadm init --v=5
 #use export kubeconfig
 #kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/weave-daemonset-k8s.yaml
 #kubeadm token create --print-join-command
