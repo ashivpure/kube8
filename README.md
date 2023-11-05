@@ -37,6 +37,8 @@
 #kubectl delete -f file-name
 
 error kubectl get nodes :-The connection to the server localhost:8080 was refused - did you specify the right host or port?
+# curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+# sudo cp /etc/kubernetes/admin.conf /home/vagrant/config this comma path in different in your pc you can also use this sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config then cd .kube and check
 #mkdir .kube
 # ll
 # cat admin.conf
